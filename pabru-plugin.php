@@ -1,5 +1,4 @@
 <?php
-
 /*
 Plugin name: pabru plugin 
 Description: Le fameux plugin de pabru ! web developper de l'espace !
@@ -22,3 +21,5 @@ function my_plugin_load_plugin_textdomain() {
     load_plugin_textdomain( 'my-plugin', false, plugin_basename( dirname( __FILE__ ) ) . '/languages/' );
 }
 add_action( 'plugins_loaded', 'my_plugin_load_plugin_textdomain' );
+
+require( plugin_dir_path( __FILE__ ) . 'inc/cpt.inc.php');
