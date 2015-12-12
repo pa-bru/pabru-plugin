@@ -3,30 +3,29 @@
 if ( ! function_exists('pabru_map') ) {
 	// Register Custom Post Type
 	function pabru_map() {
-
 		$labels = array(
-			'name'                  => _x( 'pabru_maps', 'Post Type General Name', 'text_domain' ),
-			'singular_name'         => _x( 'pabru_map', 'Post Type Singular Name', 'text_domain' ),
-			'menu_name'             => __( 'pabru_map', 'text_domain' ),
-			'name_admin_bar'        => __( 'pabru_map', 'text_domain' ),
-			'parent_item_colon'     => __( '', 'text_domain' ),
-			'all_items'             => __( 'all maps', 'text_domain' ),
-			'add_new_item'          => __( 'Add a new map', 'text_domain' ),
-			'add_new'               => __( 'Add new', 'text_domain' ),
-			'new_item'              => __( 'New map', 'text_domain' ),
-			'edit_item'             => __( 'Edit map', 'text_domain' ),
-			'update_item'           => __( 'Update map', 'text_domain' ),
-			'view_item'             => __( 'view map', 'text_domain' ),
-			'search_items'          => __( 'Search map', 'text_domain' ),
-			'not_found'             => __( 'Not found', 'text_domain' ),
-			'not_found_in_trash'    => __( 'Not found in Trash', 'text_domain' ),
-			'items_list'            => __( 'maps list', 'text_domain' ),
-			'items_list_navigation' => __( 'maps list navigation', 'text_domain' ),
-			'filter_items_list'     => __( 'Filter maps list', 'text_domain' ),
+			'name'                  => _x( 'pabru_maps', 'Post Type General Name', 'pabru-plugin' ),
+			'singular_name'         => _x( 'pabru_map', 'Post Type Singular Name', 'pabru-plugin' ),
+			'menu_name'             => __( 'pabru_map', 'pabru-plugin' ),
+			'name_admin_bar'        => __( 'pabru_map', 'pabru-plugin' ),
+			'parent_item_colon'     => __( '', 'pabru-plugin' ),
+			'all_items'             => __( 'All maps', 'pabru-plugin' ),
+			'add_new_item'          => __( 'Add a new map', 'pabru-plugin' ),
+			'add_new'               => __( 'Add new', 'pabru-plugin' ),
+			'new_item'              => __( 'New map', 'pabru-plugin' ),
+			'edit_item'             => __( 'Edit map', 'pabru-plugin' ),
+			'update_item'           => __( 'Update map', 'pabru-plugin' ),
+			'view_item'             => __( 'View map', 'pabru-plugin' ),
+			'search_items'          => __( 'Search map', 'pabru-plugin' ),
+			'not_found'             => __( 'Not found', 'pabru-plugin' ),
+			'not_found_in_trash'    => __( 'Not found in Trash', 'pabru-plugin' ),
+			'items_list'            => __( 'Maps list', 'pabru-plugin' ),
+			'items_list_navigation' => __( 'Maps list navigation', 'pabru-plugin' ),
+			'filter_items_list'     => __( 'Filter maps list', 'pabru-plugin' ),
 		);
 		$args = array(
-			'label'                 => __( 'pabru_map', 'text_domain' ),
-			'description'           => __( 'used to manage your maps', 'text_domain' ),
+			'label'                 => __( 'pabru_map', 'pabru-plugin' ),
+			'description'           => __( 'Used to manage your maps.', 'pabru-plugin' ),
 			'labels'                => $labels,
 			'supports'              => array( 'title', ),
 			'hierarchical'          => false,
@@ -34,6 +33,7 @@ if ( ! function_exists('pabru_map') ) {
 			'show_ui'               => true,
 			'show_in_menu'          => true,
 			'menu_position'         => 80,
+			'menu_icon'             => 'dashicons-admin-site',
 			'show_in_admin_bar'     => true,
 			'show_in_nav_menus'     => true,
 			'can_export'            => true,
@@ -43,7 +43,6 @@ if ( ! function_exists('pabru_map') ) {
 			'capability_type'       => 'page',
 		);
 		register_post_type( 'pabru_map', $args );
-
 	}
-add_action( 'init', 'pabru_map', 0 );
+	add_action( 'init', 'pabru_map', 0 );
 }

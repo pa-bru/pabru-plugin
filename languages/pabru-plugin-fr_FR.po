@@ -1,6 +1,8 @@
-"Project-Id-Version: Merle-Marty PluginReport-Msgid-Bugs-To: https://github.com/williameemi/merle_marty_plugin_wpui\n"
+msgid ""
+msgstr ""
+"Project-Id-Version: pabru-plugin - version 1.0 PluginReport-Msgid-Bugs-To: https://github.com/pa-bru/pabru-plugin\n"
 "POT-Creation-Date: 2015-08-11 11:36-0500\n"
-"PO-Revision-Date: 2015-11-25 23:54+0100\n"
+"PO-Revision-Date: 2015-12-12 23:11+0100\n"
 "Last-Translator: Michael Beckwith <michael.d.beckwith@gmail.com>\n"
 "Language-Team: Pascal Kläres & Ralf Koller <pascal.klaeres@gmail.com & r.koller@gmail.com>\n"
 "Language: fr_FR\n"
@@ -18,5 +20,65 @@
 "X-Poedit-SearchPathExcluded-1: *.js\n"
 
 #: pabru-plugin.php, cpt.inc.php
-msgid "The shortcode to paste in the post you want"
-msgstr "Le shortcode à insérer dans l'article/page que vous souhaitez"
+msgid "Informations of the map"
+msgstr "Informations de la carte"
+
+msgid "Shortcode to paste in the post you want"
+msgstr "Shortcode à insérer dans l'article que vous souhaitez"
+
+msgid "Address to mark on the map"
+msgstr "Adresse du marqueur"
+
+msgid "The description you want : (%d characters max)"
+msgstr "Description de la carte : (%d caractères maximum)"
+
+msgid "Title of the marker on the map : (%d characters max)"
+msgstr "Titre du marqueur : (%d caractères maximum)"
+
+msgid "Content text to put in the context box : (%d characters max)"
+msgstr "Contenu à placer dans la boite du marqueur : (%d caractères maximum)"
+
+msgid "Link in the marker box"
+msgstr "URL à insérer dans la boite du marqueur"
+
+msgid "All maps"
+msgstr "Toutes les cartes"
+
+msgid "Add a new map"
+msgstr "Ajouter une carte"
+
+msgid "Add new"
+msgstr "Ajouter"
+
+msgid "New map"
+msgstr "Nouvelle carte"
+
+msgid "Edit map"
+msgstr "Modifier une carte"
+
+msgid "Update map"
+msgstr "Mettre à jour la carte"
+
+msgid "View map"
+msgstr "Voir la carte"
+
+msgid "Search map"
+msgstr "Chercher une carte"
+
+msgid "Not found"
+msgstr "Aucun résultat trouvé"
+
+msgid "Not found in Trash"
+msgstr "Aucun résultat trouvé dans la corbeille"
+
+msgid "Maps list"
+msgstr "Liste des cartes"
+
+msgid "Maps list navigation"
+msgstr "navigation de la liste des cartes"
+
+msgid "Filter maps list"
+msgstr "Filtrer la liste des cartes"
+
+msgid "Used to manage your maps."
+msgstr "Utilisé pour gérer vos propres cartes."
