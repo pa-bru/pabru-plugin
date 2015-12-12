@@ -113,7 +113,7 @@ Author URI: http://www.pa-bru.com/
 	add_action('save_post','save_pabru_map_metabox_data');
 	function save_pabru_map_metabox_data($post_ID){
 		//verify if nonce is valid  and if the request referred from an administration screen :
-		if(!check_admin_referer('save_metabox_data', 'pabru_map_meta_box_nonce')){
+		if(!wp_verify_nonce($_POST['pabru_map_meta_box_nonce'], 'save_metabox_data' )){
 			return $post_ID;
 		}
 		//just the address is necessary to display a map :
