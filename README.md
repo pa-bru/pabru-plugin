@@ -21,7 +21,7 @@ This plugin enables you to create and display customized maps.
 
 [Visit My Portfolio] (http://pa-bru.com/)
 
-[Linkedin] (https://fr.linkedin.com/in/pauladrienbru)
+[Visit My Linkedin] (https://fr.linkedin.com/in/pauladrienbru)
 
 Basic Usage
 ===========
