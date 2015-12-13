@@ -154,8 +154,10 @@ Author URI: http://www.pa-bru.com/
 		
 		//verifying if id parameter in shortcode is an int :
 			$atts['id'] = intval($atts['id']);
-			if ( !$atts['id'] )
-				$atts['id'] = '';
+			if ( !$atts['id'] ){
+				return __('Map cannot be displayed because of a false shortcode', 'pabru-plugin');
+			}
+				
 		
 		//verifying if post is a map and if it exists :
 			$pabru_map_post = get_post($atts['id']);
